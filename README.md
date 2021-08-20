@@ -23,7 +23,7 @@ mord
 
 ### Dataset ###
 
-We conduct 5-fold cross validation on HSK Dynamic Composition Corpus to evaluate our system. This dataset (this code can be run with part of the data in [here]()) is publicly available [here](http://hsk.blcu.edu.cn/).
+We conduct 5-fold cross validation on HSK Dynamic Composition Corpus to evaluate our system. This dataset (this code can be run with part of the data in [here](https://github.com/iris2hu/L2C-rater/tree/main/data)) is publicly available [here](http://hsk.blcu.edu.cn/).
 
 ### Options
 
@@ -39,7 +39,7 @@ For ```feature_type```, ```c``` means segmenting the essay to **<em>character</e
 
 ### Example ###
 
-The following command  trains the best model among all automated models. Note that you will not get a convincing result with data provided [here](), because the amount of data is not large enough.
+The following command  trains the best model among all automated models. Note that you will not get a convincing result with data provided [here](https://github.com/iris2hu/L2C-rater/tree/main/data), because the amount of data is not large enough.
 
 ```bash
 python main.py -m b -t wp
