@@ -3,17 +3,16 @@
 An automatic essay scoring method for Chinese L2 writing based on linear models, tree-structure models and logistic regression models, especially Ordinal Logistic Regression(OLR), combining 90 linguistic features and Tf-Idf textual representations.
 
 ### Enviroment
-Python 3.6+
+<h6>Python 3.6+<h6>
 
 ### Main Package
-numpy 1.19.5
-pandas 1.1.5
-scipy 1.5.2
-sci-kit-learn 0.24.1
-pyltp 0.1.9.1
-jieba
-xgboost
-mord
+<h6>numpy 1.19.5</h6>
+<h6>pandas 1.1.5</h6>
+<h6>scipy 1.5.2</h6>
+<h6>sci-kit-learn 0.24.1<h6>
+<h6>pyltp 0.1.9.1</h6>
+<h6>xgboost 1.3.3</h6>
+<h6>mord 0.6</h6>
 
 ### Set Up ###
 
