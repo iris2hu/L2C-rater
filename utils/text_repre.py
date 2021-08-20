@@ -71,61 +71,6 @@ def get_text_feature_from_ltp_results(text, text_dict, feature='c'):
     return corpus_line
 
 
-# def get_text_feature(df, feature='c'):
-
-#     """
-#     input:
-#         - essay_revised.csv
-#     return: 
-#         - X
-#         - Y
-#     """
-#     if feature not in ['c', 'w', 'cw', 'wp', 'cwp']:
-#         print('feature not supported, please refer to: \
-#             \n[char(c), word(w), char/word(cw), word/pos(wp), char/word/pos(cwp)]')
-#         exit()
-
-#     corpus, Y = [], []
-
-#     # 分词这一步，在语言特征提取的时候就有，稍后可以将此处优化一下
-#     for index, row in df.iterrows():
-#         essay_id = row['essay_ID']
-#         text = row['ESSAY']
-#         order = score2ord[float(row['SCORE'])]
-
-#         if feature == 'c':
-#             char_seg = ' '.join(list(text))
-#             corpus.append(char_seg)
-#         elif feature == 'w':
-#             word_seg = ' '.join(list(jieba.cut(text)))
-#             corpus.append(word_seg)
-#         elif feature == 'cw':
-#             char_seg = ' '.join(list(text))
-#             word_seg = ' '.join(list(jieba.cut(text)))
-#             corpus.append(char_seg + ' ' + word_seg)
-#         elif feature == 'wp':
-#             wordlist, poslist = [], []
-#             wp_seg = pseg.cut(text)
-#             for w, p in wp_seg:
-#                 wordlist.append(w)
-#                 poslist.append(p)
-#             word_seg, pos_seg = ' '.join(wordlist), ' '.join(poslist)
-#             corpus.append(word_seg + ' ' + pos_seg)
-#         elif feature == 'cwp':
-#             char_seg = ' '.join(list(text))
-#             wordlist, poslist = [], []
-#             wp_seg = pseg.cut(text)
-#             for w, p in wp_seg:
-#                 wordlist.append(w)
-#                 poslist.append(p)
-#             word_seg, pos_seg = ' '.join(wordlist), ' '.join(poslist)
-#             corpus.append(char_seg + ' ' + word_seg + ' ' + pos_seg)
-
-#         Y.append(order)
-
-#     return corpus, np.array(Y)
-
-
 def get_text_matrix(corpus, ngram_min=1, ngram_max=1, df_threshold=20, sparse=False):
     """
     transform the corpus to tf-idf matrix
