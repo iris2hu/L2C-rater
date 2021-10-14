@@ -22,7 +22,7 @@ An automatic essay scoring method for Chinese L2 writing based on linear models,
 
 ### Dataset ###
 
-We conduct 5-fold cross validation on [HSK Dynamic Composition Corpus 2.0](http://hsk.blcu.edu.cn/) to evaluate our system. Currently, the code can be run with the provided [samples](https://github.com/iris2hu/L2C-rater/tree/main/data). The whole dataset is publicly available [here](http://hsk.blcu.edu.cn/).
+We conduct 5-fold cross validation on [HSK Dynamic Composition Corpus 2.0](http://hsk.blcu.edu.cn/) to evaluate our system. Currently, the code can be run with the provided [samples](https://github.com/iris2hu/L2C-rater/tree/main/data).
 
 ### Options
 
