@@ -2,6 +2,8 @@
 
 An automatic essay scoring method for Chinese L2 writing based on linear models, tree-structure models and logistic regression models, especially Ordinal Logistic Regression(OLR), combining 90 linguistic features and Tf-Idf textual representations.
 
+An online demo of L2C-rater can be seen at [https://l2c.shenshen.wiki/](https://l2c.shenshen.wiki/).
+
 ### Enviroment
 * Python 3.6+
 
